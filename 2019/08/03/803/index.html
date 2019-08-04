@@ -21,7 +21,7 @@
 
 <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
   <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
-  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-big-counter.min.css?v=1.0.2">
 
 
 <script id="hexo.configurations">
@@ -50,7 +50,7 @@
       path: 'search.xml'
     },
     tabs: true,
-    motion: {"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     translation: {
       copy_button: '复制',
       copy_success: '复制成功',
@@ -432,6 +432,9 @@
 
           </div>
           
+    
+    <div class="comments" id="gitalk-container"></div>
+  
 
 
         </div>
@@ -682,7 +685,7 @@
         s.src = '/lib/three/three.min.js';
         d.body.appendChild(s);
       }
-      let styles = ['/lib/three/three-waves.min.js', '', ''];
+      let styles = ['', '/lib/three/canvas_lines.min.js', ''];
       loadStyle = () => {
         styles.forEach(x => {
           if (x !== '') {
@@ -735,6 +738,26 @@
 
 
 
+
+    
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+
+<script>
+  var gitalk = new Gitalk({
+    clientID: '19afd71964fbea187b78',
+    clientSecret: 'ad836fcc436c3f85fca6f80f7818ab451ed4bf09',
+    repo: '',
+    owner: '15871583805',
+    admin: ['https://github.com/15871583805'],
+    id: md5(location.pathname),
+      language: 'zh-CN',
+    
+    distractionFreeMode: 'true'
+  });
+  gitalk.render('gitalk-container');
+</script>
 
 
 </body>
