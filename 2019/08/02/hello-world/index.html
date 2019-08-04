@@ -20,6 +20,8 @@
 
 
 <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2">
 
 
 <script id="hexo.configurations">
@@ -48,7 +50,7 @@
       path: 'search.xml'
     },
     tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    motion: {"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     translation: {
       copy_button: '复制',
       copy_success: '复制成功',
@@ -351,7 +353,7 @@
               
                 <span class="post-meta-item-text">本文字数：</span>
               
-              <span title="本文字数">undefined</span>
+              <span title="本文字数">762</span>
             </span>
           
             <span class="post-meta-item">
@@ -361,7 +363,7 @@
               
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
               
-              <span title="阅读时长">NaN:aN</span>
+              <span title="阅读时长">1 分钟</span>
             </span>
           
 
@@ -621,6 +623,11 @@
       <!--/noindex-->
       
 
+  <div id="music163player">
+     <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=280 height=76 src="//music.163.com/outchain/player?type=2&id=38592976&auto=1&height=66">
+     </iframe>
+  </div>
+
     </div>
   </aside>
   <div id="sidebar-dimmer"></div>
@@ -684,6 +691,7 @@
     
   
   <script color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  <script size="300" alpha="0.6" zIndex="-1" src="/lib/canvas-ribbon/canvas-ribbon.js"></script>
   <script src="/lib/jquery/index.js?v=3.4.1"></script>
   <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
   <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
